@@ -1,0 +1,53 @@
+button {
+    color: #000;
+}
+
+select {
+    color: #000;
+}
+
+.disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+}
+
+.tildaAddButton {
+    width: 250px;
+    text-align: left;
+}
+
+.tildaPostButton {
+    width: 250px;
+    text-align: left;
+    font-weight: bold;
+
+}
+
+.tildaAmountField {
+    text-align: right;
+    font-weight: bold;
+}
+
+
+.tildaNumericField {
+    text-align: right;
+}
+
+
+.tildaTotalLabel {
+    text-align: left;
+}
+
+.tildaTotalPriceField {
+    text-align: right;
+}
+
+.totalCountField {
+    text-align: right;
+    font-weight: bold;
+}
+
+.tildaTotalAmountField {
+    text-align: right;
+    font-weight: bold;
+}

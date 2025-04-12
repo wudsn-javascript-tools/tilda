@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.2, maximum-scale=1.2, user-scalable=no" />
+  <title>Tilda</title>
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/5/w3.css">
+  <link rel="stylesheet" href="style.css" type="text/css" />
+  <script src="data.js"></script>
+  <script src="tilda.js"></script>
+
+
+</head>
+
+<body>
+  <div class="w3-bar w3-black">
+    <button class="w3-bar-item w3-button" onclick="openMainTab('calculatorTab')">Bon</button>
+    <button class="w3-bar-item w3-button" onclick="openMainTab('totalsTab')">Gesamt</button>
+   <!--  <button class="w3-bar-item w3-button" onclick="openMainTab('postingsTab')">Buchungen</button> -->
+  </div>
+
+  <div id="calculatorTab" class="w3-container mainTab">
+    <table>
+      <tbody id="articlesTable">
+      </tbody>
+    </table>
+  </div>
+
+  <div id="postingsTab" class="w3-container mainTab" style="display:none">
+  </div>
+
+
+  <div id="totalsTab" class="w3-container mainTab" style="display:none">
+    <table>
+      <tbody id="totalsTable">
+      </tbody>
+    </table>
+  </div>
+</body>
+
+<!-- Initialize -->
+<script> let tilda = new Tilda(); tilda.init(); </script>
+
+</html>
