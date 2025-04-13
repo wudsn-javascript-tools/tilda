@@ -8,11 +8,11 @@ class Data {
     constructor() {
 
         this.categories = [
-            { id: "c1", text: "Kaffee", color: "#e4b7f7" },
-            { id: "c2", text: "Alkoholisches", color: "#f7b7bb" },
-            { id: "c3", text: "Wein", color: "#adf7b3" },
-            { id: "c4", text: "Alkoholfrei", color: "#f7efad" },
-            { id: "c5", text: "Pfand", color: "#fdfdfd" }
+            { id: "c1", text: "Kaffee", style: "background-color:#e4b7f7;" },
+            { id: "c2", text: "Alkoholisches", style: "background-color:#f7b7bb;" },
+            { id: "c3", text: "Wein", style: "background-color:#adf7b3;" },
+            { id: "c4", text: "Alkoholfrei", style: "background-color:#f7efad;" },
+            { id: "c5", text: "Pfand", style: "background-color:#fdfdfd; color:#ff2738; font-weight:bold;" }
         ];
         this.entries = [
             { category: "c1" },
