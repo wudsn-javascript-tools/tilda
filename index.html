@@ -15,23 +15,35 @@
 
 <body>
   <div class="w3-bar w3-black">
-    <button class="w3-bar-item w3-button" onclick="openMainTab('calculatorTab')">Bon</button>
-    <button class="w3-bar-item w3-button" onclick="openMainTab('totalsTab')">Gesamt</button>
-   <!--  <button class="w3-bar-item w3-button" onclick="openMainTab('postingsTab')">Buchungen</button> -->
+    <button id="bonTabButton" class="w3-bar-item w3-button" onclick="openMainTab('bonTab')">Bon</button>
+    <button id="totalsTabButton" class="w3-bar-item w3-button" onclick="openMainTab('totalsTab')">Gesamt</button>
+    <button id="infoTabButton" class="w3-bar-item w3-button" onclick="openMainTab('infoTab')">Info</button>
   </div>
 
-  <div id="calculatorTab" class="w3-container mainTab">
+  <div id="bonTab" class="w3-container mainTab" style="display:block">
     <table>
-      <tbody id="articlesTable">
+      <tbody id="bonTable">
       </tbody>
     </table>
   </div>
 
-  <div id="postingsTab" class="w3-container mainTab" style="display:none">
-  </div>
-
 
   <div id="totalsTab" class="w3-container mainTab" style="display:none">
+    <table>
+      <tr>
+        <td>Datum</td>
+        <td id="eventDate"></td>
+        <td></td>
+        <td>Gesamt</td>
+        <td id="totalsTotalAmountField"></td>
+        <td><button id="totalsExportTotalsButton" type="button"
+            onclick="tilda.totalsExportTotalsButtonClicked()">Exportieren</button></td>
+        </td>
+        <td><button id="totalsClearTotalsButton" type="button"
+            onclick="tilda.totalsClearTotalsButtonClicked()">Löschen</button></td>
+        </td>
+      </tr>
+    </table>
     <table>
       <tbody id="totalsTable">
       </tbody>
@@ -39,6 +51,11 @@
   </div>
 </body>
 
+
+<div id="infoTab" class="w3-container mainTab" style="display:none">
+  <div><img src="logo.png"></div>
+  <div><br>Tilda version 2025-04-14 by Peter Dell.</div>
+</div>
 <!-- Initialize -->
 <script> let tilda = new Tilda(); tilda.init(); </script>
 
