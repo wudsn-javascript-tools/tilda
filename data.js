@@ -52,7 +52,7 @@ class Data {
             { text: "Martini Floreale", price: 7.00 },
             { text: "Limo", price: 3.00 },
             { text: "Sprudel (0,2l)", price: 2.00 },
-            { text: "Sprudel (Flasche)", price: 4.00 },
+            { text: "Sprudel (Flasche)", price: 4.01 },
 
             { category: "c5" },
             { text: "Pfand", price: 4.00 },
