@@ -141,7 +141,9 @@ class Tilda {
                     // Get total count from previously stored modelArray?
                     let totalCount = 0;
                     if (oldState !== null) {
-                        totalCount = oldState.modelArray[i].totalCount;
+                        if (oldState.modelArray[i] !== undefined) {
+                            totalCount = oldState.modelArray[i].totalCount;
+                        }
                     }
                     this.state.modelArray[i] = {
                         bonAddArticleButtonID: bonAddArticleButtonID, bonArticleCount: 0, bonClearArticleCountButtonID: bonClearArticleCountButtonID, bonArticleAmountElementID: bonArticleAmountElementID, bonArticleAmount: 0,
