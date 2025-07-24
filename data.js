@@ -59,16 +59,6 @@ class Data {
             { text: "Pfand", price: 4.00 },
             { text: "Pfand zurück", price: -4.00 },
 
-
-            { category: "c6" },
-            { text: "Crêpes / Zimt & Zucker", price: 3.50 },
-            { text: "Crêpes / Nutella", price: 4.50 },
-            { text: "Crêpes / Kinderriegel", price: 5.00 },
-            { text: "Crêpes / Gran Manier", price: 5.00 },
-            { text: "Crêpes / Lachs", price: 7.00 },
-            { text: "Crêpes / Elsässer Art", price: 6.00 },
-            { text: "Crêpes / Vegetarisch", price: 6.00 },
-            { text: "Muffin", price: 3.50 }
         ];
     }
 
